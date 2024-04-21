@@ -1,4 +1,5 @@
 package main;
+import java.security.SecureRandom;
 import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
@@ -9,7 +10,7 @@ public class Bill extends CustomerName{
     public static String getRandomNumberString() {
         // It wishopTestll generate 6 digit random Number.
         // from 0 to 999999
-        Random rnd = new Random();
+        Random rnd = new SecureRandom();
         int number = rnd.nextInt(999999);
     
         // this will convert any number sequence into 6 character.
